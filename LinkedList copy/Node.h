@@ -1,0 +1,19 @@
+
+
+
+template <typename NODETYPE> class LinkedList;
+
+template <typename NODETYPE>
+
+class Node
+{
+private:
+    NODETYPE elem;
+    Node<NODETYPE>* next;
+    
+public:
+    friend class LinkedList<NODETYPE>;
+
+
+};
+

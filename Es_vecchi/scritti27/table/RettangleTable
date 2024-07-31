@@ -1,0 +1,30 @@
+#ifndef __RETTANGLETABLE_H__
+#define __RETTANGLETABLE_H__
+
+
+
+#include "Table.h"
+
+class RettangleTable : public Table
+{
+private:
+    double base , height;
+public:
+    RettangleTable (int col, std::string tW, std::string pW, double price, double  b , double h):
+        Table{col , tW, pW, price}, base{b},height{h} { }
+    
+    virtual double getArea() const {  return (base*height);}
+    virtual std::string toString()const{
+        std::ostringstream out;
+        out <<Table::toString;
+        out<<"\nTavola Rettangolare con base :" << base <<" altezza : "<< height ;
+        return out.str();
+
+    }
+
+};
+
+
+
+
+#endif // __RETTANGLETABLE_H__

@@ -1,0 +1,4 @@
+Code   Name   Quantity   Price  
+1 hamza 34  213
+2 hamz 34  21
+3 ham 23  11
